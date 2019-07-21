@@ -1,7 +1,7 @@
 <template>
    <el-row>
         <el-col :span="6">
-          <img src="../../assets/imgs/logo.png" alt>
+          
         </el-col>
         <el-col :span="12">
           <h2 class="my-h2">黑马电商管理系统</h2>
