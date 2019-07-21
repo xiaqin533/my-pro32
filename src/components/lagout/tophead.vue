@@ -4,7 +4,7 @@
           
         </el-col>
         <el-col :span="12">
-          <h2 class="my-h2">黑马电商管理系统</h2>
+          <h2 class="my-h2">电商管理系统</h2>
         </el-col>
         <el-col :span="6">
           <a href="#" class="mylink" @click.prevent="logout">退出</a>
