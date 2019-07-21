@@ -1,0 +1,82 @@
+<template>
+   <el-aside width="200px">
+        <!--  el-menu:菜单栏-->
+        <el-menu
+          class="el-menu-vertical-demo"
+          :unique-opened="true"
+          :router="true"
+          :collapse-transition="true">
+          <!-- el-submenu:选项  index:当前选项的唯一标识(跳转路径) -->
+          <el-submenu index="1">
+            <!-- template :菜单选项内容 -->
+            <template slot="title">
+              <i class="el-icon-location"></i>
+              <span>用户管理</span>
+            </template>
+
+            <el-menu-item index="/users">
+              <i class="el-icon-menu"></i>用户列表
+            </el-menu-item>
+          </el-submenu>
+          <el-submenu index="2">
+            <!-- template :菜单选项内容 -->
+            <template slot="title">
+              <i class="el-icon-location"></i>
+              <span>权限管理</span>
+            </template>
+            <el-menu-item index="/rolelist">
+              <i class="el-icon-menu"></i>角色列表
+            </el-menu-item>
+            <el-menu-item index="/rights">
+              <i class="el-icon-menu"></i>权限列表
+            </el-menu-item>
+          </el-submenu>
+          <el-submenu index="3">
+            <!-- template :菜单选项内容 -->
+            <template slot="title">
+              <i class="el-icon-location"></i>
+              <span>商品管理</span>
+            </template>
+            <el-menu-item index="/goods">
+              <i class="el-icon-menu"></i>商品列表
+            </el-menu-item>
+            <el-menu-item index="/params">
+              <i class="el-icon-menu"></i>分类参数
+            </el-menu-item>
+            <el-menu-item index="/categories">
+              <i class="el-icon-menu"></i>商品分类
+            </el-menu-item>
+          </el-submenu>
+          <el-submenu index="4">
+            <!-- template :菜单选项内容 -->
+            <template slot="title">
+              <i class="el-icon-location"></i>
+              <span>订单管理</span>
+            </template>
+            <el-menu-item index="4-1">
+              <i class="el-icon-menu"></i>订单列表
+            </el-menu-item>
+          </el-submenu>
+          <el-submenu index="5">
+            <!-- template :菜单选项内容 -->
+            <template slot="title">
+              <i class="el-icon-location"></i>
+              <span>数据统计</span>
+            </template>
+            <el-menu-item index="5-1">
+              <i class="el-icon-menu"></i>数据报表
+            </el-menu-item>
+          </el-submenu>
+        </el-menu>
+      </el-aside>
+</template>
+
+<script>
+    export default {
+        
+    }
+</script>
+
+<style >
+
+</style>
